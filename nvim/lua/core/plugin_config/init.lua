@@ -6,3 +6,9 @@ end
 
 require(fullPath("nvim-tree"))
 require(fullPath("telescope"))
+require(fullPath("vimtex"))
+require(fullPath("nvim-treesitter"))
+require(fullPath("lspconfig"))
+require(fullPath("nvim-lsp-installer"))
+require(fullPath("nvim-cmp"))
+

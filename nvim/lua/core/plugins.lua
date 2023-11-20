@@ -22,8 +22,18 @@ return require('packer').startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
 }
   use ("startup-nvim/startup.nvim")
+  use 'lervag/vimtex'
+  -- IDE 
+  use 'nvim-treesitter/nvim-treesitter'
+  use 'neovim/nvim-lspconfig'
+  use 'williamboman/nvim-lsp-installer'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-cmdline'
+  use 'hrsh7th/nvim-cmp'
 
-  -- Automatically set up your configuration after cloning packer.nvim
+    -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
     require('packer').sync()
