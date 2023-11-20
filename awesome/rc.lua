@@ -49,8 +49,7 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
-
+beautiful.init("~/.config/awesome/theme.lua")
 -- This is used later as the default terminal and editor to run.
 terminal = "x-terminal-emulator"
 editor = os.getenv("EDITOR") or "editor"
@@ -329,10 +328,15 @@ globalkeys = gears.table.join(
               {description = "restore minimized", group = "client"}),
 
     -- Applications
+    -- LibreWolf
     awful.key({ modkey }, "b", function ()
-    awful.util.spawn("firefox") end,
-      {description = "firefox", group = "applications"}),
-      
+    awful.util.spawn("librewolf") end,
+      {description = "LibreWolf", group = "applications"}),
+   -- Obsidian  
+    awful.key({ modkey }, "o", function ()
+    awful.util.spawn("/home/vebly/AppImages/Obsidian-1.4.16.AppImage") end,
+      {description = "Obsidian", group = "applications"}),
+
     -- Prompt
     awful.key({ modkey },            "r",     function ()
     awful.util.spawn("dmenu_run") end,
@@ -366,7 +370,7 @@ clientkeys = gears.table.join(
               {description = "toggle floating", group = "client"}),
     awful.key({ modkey, "Control" }, "Return", function (c) c:swap(awful.client.getmaster()) end,
               {description = "move to master", group = "client"}),
-    awful.key({ modkey,           }, "o",      function (c) c:move_to_screen()               end,
+    awful.key({ modkey,           }, "y",      function (c) c:move_to_screen()               end,
               {description = "move to screen", group = "client"}),
     awful.key({ modkey,           }, "t",      function (c) c.ontop = not c.ontop            end,
               {description = "toggle keep on top", group = "client"}),
@@ -586,8 +590,4 @@ end)
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
-
-
---STARTUP APPLICATIONS
-awful.spawn.with_shell("compton")
-awful.spawn.with_shell("nitrogen --restore")
+require("startup")
