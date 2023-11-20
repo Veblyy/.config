@@ -61,7 +61,5 @@ local cmp = require'cmp'
   require('lspconfig')['clangd'].setup {
     capabilities = capabilities
   }
-  require('lspconfig')['texlab'].setup{
-    capabilities = capabilities
-  }
-
+  require('lspconfig')['texlab'].setup{}
+  require('lspconfig')['lua_ls'].setup{}

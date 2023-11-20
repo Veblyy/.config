@@ -24,14 +24,16 @@ return require('packer').startup(function(use)
   use ("startup-nvim/startup.nvim")
   use 'lervag/vimtex'
   -- IDE 
-  use 'nvim-treesitter/nvim-treesitter'
+  use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+  use 'nvim-treesitter/playground'
   use 'neovim/nvim-lspconfig'
-  use 'williamboman/nvim-lsp-installer'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-cmdline'
   use 'hrsh7th/nvim-cmp'
+  use 'williamboman/mason.nvim'
+  use 'williamboman/mason-lspconfig.nvim'
 
     -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
