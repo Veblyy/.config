@@ -63,3 +63,14 @@ local cmp = require'cmp'
   }
   require('lspconfig')['texlab'].setup{}
   require('lspconfig')['lua_ls'].setup{}
+  require('lspconfig')['pylsp'].setup{}
+  require('lspconfig')['rust_analyzer'].setup{}
+  require('lspconfig')['cmake'].setup{
+  cmd = { "/home/vebly/.local/share/nvim/mason/packages/cmake-language-server/venv/bin/cmake-language-server" },
+}
+
+ mapping = cmp.mapping.preset.insert({
+      ['<C-Space>'] = cmp.mapping.complete(),
+      ['<C-e>'] = cmp.mapping.abort(),
+      ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+    })

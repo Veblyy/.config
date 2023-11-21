@@ -27,14 +27,21 @@ return require('packer').startup(function(use)
   use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use 'nvim-treesitter/playground'
   use 'neovim/nvim-lspconfig'
+  use 'williamboman/mason-lspconfig.nvim'
+  use 'williamboman/mason.nvim'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-cmdline'
   use 'hrsh7th/nvim-cmp'
-  use 'williamboman/mason.nvim'
-  use 'williamboman/mason-lspconfig.nvim'
+  -- snipped engine for code completion 
+  use 'hrsh7th/cmp-vsnip'
+  use 'hrsh7th/vim-vsnip'
 
+  -- Colorschemes 
+  use 'nyoom-engineering/oxocarbon.nvim'
+  use 'Mofiqul/dracula.nvim'
+  use 'tanvirtin/monokai.nvim'
     -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then

@@ -94,6 +94,16 @@ _G.packer_plugins = {
     path = "/home/vebly/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
+  ["cmp-vsnip"] = {
+    loaded = true,
+    path = "/home/vebly/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
+    url = "https://github.com/hrsh7th/cmp-vsnip"
+  },
+  ["dracula.nvim"] = {
+    loaded = true,
+    path = "/home/vebly/.local/share/nvim/site/pack/packer/start/dracula.nvim",
+    url = "https://github.com/Mofiqul/dracula.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/vebly/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -108,6 +118,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/vebly/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["monokai.nvim"] = {
+    loaded = true,
+    path = "/home/vebly/.local/share/nvim/site/pack/packer/start/monokai.nvim",
+    url = "https://github.com/tanvirtin/monokai.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -134,6 +149,11 @@ _G.packer_plugins = {
     path = "/home/vebly/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
+  ["oxocarbon.nvim"] = {
+    loaded = true,
+    path = "/home/vebly/.local/share/nvim/site/pack/packer/start/oxocarbon.nvim",
+    url = "https://github.com/nyoom-engineering/oxocarbon.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/vebly/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -158,6 +178,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/vebly/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["vim-vsnip"] = {
+    loaded = true,
+    path = "/home/vebly/.local/share/nvim/site/pack/packer/start/vim-vsnip",
+    url = "https://github.com/hrsh7th/vim-vsnip"
   },
   vimtex = {
     loaded = true,
