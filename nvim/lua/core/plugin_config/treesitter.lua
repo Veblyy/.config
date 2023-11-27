@@ -24,6 +24,9 @@ require'nvim-treesitter.configs'.setup {
   },
 }
 
+local vim = vim
+local opt = vim.opt
 vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
-
+--open folds by default
+vim.cmd([[ set nofoldenable]])
