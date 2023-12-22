@@ -25,7 +25,7 @@ theme.bg_systray = theme.bg_normal
 -- }}}
 
 -- {{{ Borders
-theme.useless_gap   = dpi(8)
+theme.useless_gap   = dpi(3)
 theme.border_width  = dpi(2)
 theme.border_normal = "#3F3F3F"
 theme.border_focus  = "#a598eb"
@@ -79,7 +79,6 @@ theme.taglist_squares_unsel = themes_path .. "zenburn/taglist/squarez.png"
 -- }}}
 
 -- {{{ Misc
-theme.awesome_icon           = themes_path .. "zenburn/awesome-icon.png"
 theme.menu_submenu_icon      = themes_path .. "default/submenu.png"
 -- }}}
 
